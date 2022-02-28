@@ -133,8 +133,15 @@
     <ClCompile Include="src\handle.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="resource.h" />
     <ClInclude Include="src\cmdline.h" />
     <ClInclude Include="src\handle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="filehelp.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="filehelp.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
