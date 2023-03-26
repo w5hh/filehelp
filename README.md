@@ -1,6 +1,7 @@
 # filehelp
 递归文件夹，转换文件编码，统一文件路径大小写
- #### 使用方法
+#### 依赖于libiconv，官网地址：https://www.gnu.org/software/libiconv/
+#### 使用方法
  
  ```shell
 用法: filehelp [选项] ...
@@ -14,7 +15,7 @@
   -?, --help    打印这条信息
 ```
 
- #### 当前文件gbk转utf-8 with bom 并且路径转小写的示例
+#### 当前文件gbk转utf-8 with bom 并且路径转小写的示例
  
 ```
 [root@vm test]# tree
@@ -40,8 +41,9 @@
 1 directory, 2 files
 ```
 
- #### g++ 生成命令
+#### g++ 生成命令
  
  `g++ src/filehelp.cpp src/handle.cpp -std=c++2a -liconv -o filehelp`
  
- 
+#### cmake 生成命令
+`mkdir build && cd build && cmake .. && make`
